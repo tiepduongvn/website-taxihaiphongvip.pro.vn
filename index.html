@@ -25,7 +25,7 @@
     .brand .logo{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;color:#111827;font-weight:900}
     .phone{font-weight:800;letter-spacing:.5px}
     .hero{background:radial-gradient(1200px 600px at 70% -10%, #fff4d6, transparent 60%),linear-gradient(180deg,#fff, #fff)}
-    .hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:56px 0 40px}
+    .hero img.fullwidth{width:100%;height:auto;display:block;border-radius:0;margin:0}
     @media (max-width:900px){.hero .grid{grid-template-columns:1fr;}}
     .tag{display:inline-block;background:#111827;color:#fff;border-radius:999px;font-size:12px;padding:6px 10px;margin-bottom:16px}
     h1{font-size:clamp(28px,5vw,46px);line-height:1.1;margin:0 0 10px}
@@ -67,28 +67,18 @@
 
   <main>
     <section class="hero">
-      <div class="container grid">
-        <div>
-          <span class="tag">🚕 Đón nhanh – Giá minh bạch – Xe sạch</span>
-          <h1>Đặt taxi tại Hải Phòng <br/>chỉ với một chạm</h1>
-          <img src="banner.webp" alt="Taxi Hải Phòng banner" style="width:100%;border-radius:14px;margin:16px 0;">
-          <p class="lead">Tổng đài 24/7 – có hoá đơn VAT, nhận hợp đồng đường dài, sân bay Cát Bi. Ưu đãi cho khách quen & doanh nghiệp.</p>
-          <div class="badges">
-            <a class="btn" href="tel:0328384576">📞 Gọi ngay</a>
-          </div>
-          <div class="features">
-            <div class="card"><strong>⏱️ Đón nhanh</strong><br/><span class="muted">Tìm xe gần nhất trong vài phút</span></div>
-            <div class="card"><strong>🧾 Hóa đơn đầy đủ</strong><br/><span class="muted">Xuất hóa đơn cho cá nhân & công ty</span></div>
-            <div class="card"><strong>🧽 Xe sạch – lịch sự</strong><br/><span class="muted">Tài xế thân thiện, chuyên nghiệp</span></div>
-          </div>
+      <img class="fullwidth" src="banner.webp" alt="Taxi Hải Phòng banner">
+      <div class="container">
+        <span class="tag">🚕 Đón nhanh – Giá minh bạch – Xe sạch</span>
+        <h1>Đặt taxi tại Hải Phòng <br/>chỉ với một chạm</h1>
+        <p class="lead">Tổng đài 24/7 – có hoá đơn VAT, nhận hợp đồng đường dài, sân bay Cát Bi. Ưu đãi cho khách quen & doanh nghiệp.</p>
+        <div class="badges">
+          <a class="btn" href="tel:0328384576">📞 Gọi ngay</a>
         </div>
-        <div>
-          <div class="card">
-            <img src="https://images.unsplash.com/photo-1518306727298-4c17e1bf6945?q=80&w=1200&auto=format&fit=crop" alt="Taxi Hải Phòng" style="width:100%;height:320px;object-fit:cover;border-radius:14px">
-            <div style="display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px">
-              <a class="btn" href="tel:0328384576">📞 Gọi đặt xe</a>
-            </div>
-          </div>
+        <div class="features">
+          <div class="card"><strong>⏱️ Đón nhanh</strong><br/><span class="muted">Tìm xe gần nhất trong vài phút</span></div>
+          <div class="card"><strong>🧾 Hóa đơn đầy đủ</strong><br/><span class="muted">Xuất hóa đơn cho cá nhân & công ty</span></div>
+          <div class="card"><strong>🧽 Xe sạch – lịch sự</strong><br/><span class="muted">Tài xế thân thiện, chuyên nghiệp</span></div>
         </div>
       </div>
     </section>
